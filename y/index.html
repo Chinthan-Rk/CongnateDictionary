@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tulu Cognate Dictionary</title>
+   
+  
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script  src="https://www.gstatic.com/firebasejs/7.15.0/firebase.js"></script>  
+    <script>
+      // Set the configuration for your app
+      // TODO: Replace with your project's config object
+      var config = {
+        apiKey: "AIzaSyAiBheCVK0KSDwpLYIZoY1HMFjhoUJ7F1g",
+        authDomain: "tulu-congnate-dictionary.firebaseapp.com",
+        databaseURL: "https://tulu-congnate-dictionary.firebaseio.com/",
+        storageBucket: "gs://tulu-congnate-dictionary.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="#">Contact</a>
+
+      <a href="#">About</a>
+    </div>
+    <div class="split left">
+      <div class="centered_left">
+        <div id="heading">
+          <h1>
+            <span
+              style="font-size: 50px; cursor: pointer; margin-right: 20px;"
+              onclick="openNav()"
+              >&#9776;</span
+            >Tulu Cognate Dictionary
+          </h1>
+        </div>
+      </div>
+      <div id="text_space">
+        <textarea
+          id="text_area"
+          class="use-keyboard-input"
+          placeholder="Search"
+        ></textarea>
+      </div>
+      <div>
+        <button id="submit_data" class="button button1" onclick="sendData()">Submit</button>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="centered_right">
+        <div class="center">
+          <div class="container">
+            <div class="card">
+              <div class="face face1">
+                <div class="content">
+                  <h3>**word here**</h3>
+                </div>
+              </div>
+              <div class="face face2">
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quas cum cumque minus iste veritatis provident at.
+                  </p>
+                  <a href="#">**word defination above**</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="fireb.js"></script>
+  </body>
+</html>
