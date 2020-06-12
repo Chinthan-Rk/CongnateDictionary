@@ -122,7 +122,7 @@ const Keyboard = {
 
                 default:
                     keyElement.textContent = key.toLowerCase();
-                    //keyElement.classList.add("keyFont_apara")
+                    keyElement.classList.add("keyFont_apara")
 
                     keyElement.addEventListener("click", () => {
                         this.properties.value += this.properties.capsLock ? key.toUpperCase() : key.toLowerCase();
