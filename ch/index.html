@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tulu Cognate Dictionary</title>
+    <link rel="stylesheet" href="newStyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyAiBheCVK0KSDwpLYIZoY1HMFjhoUJ7F1g",
+        authDomain: "tulu-congnate-dictionary.firebaseapp.com",
+        databaseURL: "https://tulu-congnate-dictionary.firebaseio.com/",
+        storageBucket: "gs://tulu-congnate-dictionary.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+<div id="header">
+    <div class="table">
+        <ul>
+            <li><h1 style="padding:10px;color:coral;">Tulu Cognate Dictionary</h1></li>
+            <li><a href="index.html">Search</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+</div>
+<div id="search">
+    <textarea id= "text_area" class="use-keyboard-input" placeholder="Search" rows="2" cols="50"></textarea>
+    <button id="submit_data" class="button button1" onclick="sendData()">Submit</button>
+</div>
+<div id="answer">
+    <div id="toBeRemoved">
+        <h3>Your defination will appear here</h3>
+        <h3>ನಿಮ್ಮ ವ್ಯಾಖ್ಯಾನ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ</h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="fireb.js"></script>
+</body>
+</html>
